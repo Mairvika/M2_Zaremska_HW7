@@ -1,0 +1,119 @@
+.square {
+    width: 450px;
+    height: 700px;
+    position: relative;
+}
+.block__1 {
+    background-color: #4bf09a;
+    left: 325px;
+    top: 375px;
+    z-index: 1;
+}
+.block__2 {
+    background-color: #7f8bec;
+    left: 175px;
+    top: 175px;
+    z-index: 4;
+}
+.block__3 {
+    background-color: #ff8989;
+    margin: 20px 0 0 20px;
+}
+.block__1,.block__2, .block__3 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    clear: right;
+}
+h4{
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.position{
+    width:700px;
+    height: 550px;
+}
+h1 {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+h2 {
+    position: relative;
+    left: 20px;
+    bottom: 30px;
+}
+h3 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+.cards {
+    position: relative;
+    transition: all 10ms ease; 
+}
+.cards {
+    height: 467px;
+    width: 497px;
+    background-color: #055720; 
+    position: relative; 
+}
+.borderblock {
+    font-size: 25px;
+    color: #fff;
+}
+blockquote p::before {
+    content: '\201C';
+}
+blockquote p::after {
+    content: '\201D';
+}
+blockquote {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+img {
+    width: 150px;
+}
+.plcard1 {
+    position: absolute;
+    right: 40%;
+    top: 45%;
+     transform: rotate(-30deg);
+}  
+.plcard2 {
+    position: absolute;
+    right: 35%;
+    top: 45%;
+    transform: rotate(-10deg);
+}
+.plcard3 {
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    transform: rotate(10deg);
+} 
+/*Для данной анимации установим несколько ключевых кадров (keyframes)*/
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+        transform: translateY(0);
+}
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+}
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+}
+    }
+/*Подключаем созданную анимацию.*/
+.plcard1:hover,.plcard2:hover, .plcard3:hover {
+    animation: bounce 1s;
+}
